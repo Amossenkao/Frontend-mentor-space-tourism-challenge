@@ -1,0 +1,141 @@
+/* Change background image depending on screen size */
+.container {
+	background-image: url(../assets/home/background-home-desktop.jpg);
+}
+
+.container.tablet {
+	background-image: url(../assets/home/background-home-tablet.jpg);
+}
+
+.container.mobile {
+	background-image: url(../assets/home/background-home-mobile.jpg);
+}
+/* ======================================================== */
+
+.main-menu li .home {
+	display: initial;
+}
+
+/* Main content ============================================ */
+
+.main-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5vh;
+	align-items: center;
+	padding: 4rem 0;
+}
+
+.text-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 5vw;
+}
+
+.text-section * {
+	max-width: 50ch;
+}
+.sub-heading-2 {
+	white-space: nowrap;
+	font-size: 22px;
+	margin-bottom: 2vh;
+}
+
+.text-section p:last-of-type {
+	font-size: 1.2em;
+}
+
+.space-text {
+	font-family: 'Bellefair', serif;
+	font-size: 18vw;
+	transition: 0.5s;
+	margin-bottom: 3vh;
+}
+.space-text:hover {
+	-webkit-text-stroke: 1px white;
+	color: transparent;
+}
+
+/* Explore button ======================================== */
+
+.btn-wrapper {
+	width: 40vw;
+}
+
+.explore-btn {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	border: none;
+	transition: 0.5s;
+	outline: 0 solid rgba(208, 214, 249, 0.2);
+}
+
+.btn-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 8vw;
+	font-family: 'Bellefair', serif;
+}
+
+/* =================================================================== */
+
+/* Tablet screens >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	.btn-wrapper {
+		width: 35vw;
+	}
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Desktop screens >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (min-width: 1025px) {
+	.main-content {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-end;
+		padding-top: 7rem;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		margin-top: 3rem;
+	}
+
+	.space-text {
+		font-size: 125px;
+	}
+
+	.btn-wrapper {
+		width: 18vw;
+	}
+
+	.text-section {
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.btn-text {
+		font-size: 50px;
+	}
+
+	.sub-heading-2 {
+		font-size: 28px;
+	}
+
+	.explore-btn:hover {
+		outline-width: 3rem;
+	}
+}

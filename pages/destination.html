@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/destination.css">
+	<title>Destination</title>
+</head>
+
+<body data-page="destinations">
+	<div class="container">
+		<i class="material-symbols-outlined menu">menu</i>
+		<i class="material-symbols-outlined close">close</i>
+		<header>
+			<a href="../index.html"><img src="../assets/shared/logo.svg" alt="Logo" class="logo"></a>
+			<nav>
+				<hr>
+				<ul class="main-menu upper-case">
+					<li><a href="../index.html"><span>00</span> Home</a>
+						<hr class="home">
+					</li>
+					<li><a href="destination.html"> <span>01</span> Destination</a>
+						<hr class="destination">
+					</li>
+					<li><a href="crew.html"><span>02</span> Crew</a>
+						<hr class="crew">
+					</li>
+					<li><a href="technology.html"><span>03</span> Technology</a>
+						<hr class="technology">
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="title sub-heading-2 upper-case">
+			<h6 class="text-grey">01</h6>
+			<p>Pick your destination</p>
+		</div>
+		<main>
+			<div class="main-container active">
+				<div class="planet-img-wrapper">
+					<img src="../assets/destination/image-moon.png" alt="" class="planet-img">
+				</div>
+				<div class="text-container">
+					<ul class="planet-list upper-case sub-nav active">
+						<li class="moon active"><a href="#">Moon</a>
+							<hr>
+						</li>
+						<li class="mars"><a href="#">Mars</a>
+							<hr>
+						</li>
+						<li class="europa"><a href="#">Europa</a>
+							<hr>
+						</li>
+						<li class="titan"><a href="#">Titan</a>
+							<hr>
+						</li>
+					</ul>
+					<h1 class="planet-name main-heading upper-case">Moon</h1>
+					<p class="description-text default-text">
+						See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+						regain perspective and come back refreshed. While you’re there, take in some history
+						by visiting the Luna 2 and Apollo 11 landing sites.
+					</p>
+					<hr class="thin-hr">
+					<div class="estimates upper-case">
+						<div class="distance">
+							<p class="sub-heading-2">Avg. distance</p>
+							<h3 class="data sub-heading-1">384,400 km</h3>
+						</div>
+						<div class="travel-time">
+							<p class="sub-heading-2">Est. travel time</p>
+							<h3 class="data sub-heading-1">3 days</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="../Javascript/main.js" type="module"></script>
+	<script src="../Javascript/destination.js"></script>
+</body>
+
+</html>
