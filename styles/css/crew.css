@@ -1,0 +1,206 @@
+.container {
+	background-image: url(../assets/crew/background-crew-desktop.jpg);
+}
+
+.container.tablet {
+	background-image: url(../assets/crew/background-crew-tablet.jpg);
+}
+
+.container.mobile {
+	background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
+.main-menu li .crew {
+	display: initial;
+}
+
+.title {
+	position: absolute;
+	top: 6.5rem;
+	left: 50%;
+	transform: translate(-50%);
+	white-space: nowrap;
+}
+
+.title * {
+	display: inline;
+	margin-left: 1rem;
+}
+
+.main-container {
+	width: 100%;
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	gap: 3rem;
+	position: absolute;
+}
+
+.img-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.person-img {
+	width: 50%;
+}
+
+.sub-nav {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.sub-nav.desktop {
+	display: none;
+}
+
+.sub-nav > * {
+	height: 1rem;
+	width: 1rem;
+	background-color: #373841;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.sub-nav .active {
+	background-color: white;
+}
+
+.sub-nav > *:hover {
+	background-color: #666;
+}
+
+.text-section {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.person-title {
+	margin-bottom: 0.5rem;
+	font-size: 22px;
+}
+
+.person-name {
+	margin-bottom: 2rem;
+}
+
+.person-bio {
+	font-size: 20px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	.main-container {
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		bottom: 0;
+		gap: 1;
+	}
+
+	.img-section hr {
+		display: none;
+	}
+
+	.title {
+		top: 8rem;
+		left: 1rem;
+		transform: translate(0);
+	}
+
+	.text-section {
+		padding-bottom: 0;
+	}
+
+	.text-section > * {
+		max-width: 60ch;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.main-container {
+		flex-direction: row-reverse;
+		bottom: 0;
+		padding-left: 5rem;
+		align-items: flex-end;
+		justify-content: flex-end;
+		height: 80vh;
+	}
+
+	.img-section {
+		width: 50%;
+		align-items: center;
+		padding-left: 3rem;
+	}
+
+	.person-img:not(.person-img.douglas, .person-img.mark) {
+		width: 70%;
+	}
+
+	.person-img.douglas {
+		width: 60%;
+	}
+
+	.person-img.mark {
+		width: 55%;
+	}
+
+	.person-name {
+		font-size: 40px;
+	}
+
+	.person-title {
+		font-weight: normal;
+		font-size: 26px;
+	}
+
+	.img-section hr {
+		display: none;
+	}
+
+	.sub-nav {
+		display: none;
+	}
+
+	.sub-nav.desktop {
+		display: flex;
+		position: fixed;
+		left: 5rem;
+		bottom: 5rem;
+		z-index: 1;
+	}
+
+	.text-section {
+		padding: 0;
+		margin-left: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+		/* padding-left: 3rem; */
+	}
+
+	.text-section * {
+		max-width: 50ch;
+	}
+
+	.title {
+		left: 4rem;
+		transform: translate(0);
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+	.main-container {
+		margin-top: 5rem;
+	}
+
+	.person-img {
+		width: 30%;
+	}
+}
